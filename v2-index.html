@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studirechner</title>
+    <link rel="stylesheet" href="v2-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="dmtech-logo.png" alt="dmTECH Logo">
+        </div>
+        <h1>dmTech Studirechner</h1>
+        <div class="header-buttons">
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>ℹ️ Info</h2>
+            <div class="info-box">
+                <p>Willkommen beim dmTECH Taschenrechner! ✨ Hier kannst du einfache mathematische Berechnungen durchführen. Gib eine Gleichung ein und drücke "=", um das Ergebnis zu sehen. Nutze die Tasten für eine schnelle Eingabe! 🧮</p>
+            </div>
+        </section>
+        <section>
+            <div class="calculator">
+                <input type="text" class="calculator-screen" value="" placeholder="Gib eine Gleichung ein" disabled />
+                <div class="calculator-keys">
+                    <button type="button" class="btn number" value="1">1</button>
+                    <button type="button" class="btn number" value="2">2</button>
+                    <button type="button" class="btn number" value="3">3</button>
+                    <button type="button" class="btn operator" value="C">C</button>
+                    <button type="button" class="btn number" value="4">4</button>
+                    <button type="button" class="btn number" value="5">5</button>
+                    <button type="button" class="btn number" value="6">6</button>
+                    <button type="button" class="btn operator" value="backspace">←</button>
+                    <button type="button" class="btn number" value="7">7</button>
+                    <button type="button" class="btn number" value="8">8</button>
+                    <button type="button" class="btn number" value="9">9</button>
+                    <button type="button" class="btn operator" value="^2">x²</button>
+                    <button type="button" class="btn number" value="0">0</button>
+                    <button type="button" class="btn operator" value="+">+</button>
+                    <button type="button" class="btn operator" value="-">-</button>
+                    <button type="button" class="btn operator" value="=">=</button>
+                    <button type="button" class="btn operator" value="sqrt">√</button>
+                    <button type="button" class="btn operator" value="/">/</button>
+                    <button type="button" class="btn operator" value="*">*</button>
+                </div>
+            </div>
+            <div class="history">
+                <h2>📜 Berechnungshistorie</h2>
+                <ul id="history-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 dmTECH | Kontakt: <span class="contact-email">info@dmtech.de</span></p>
+    </footer>
+    <script src="v2-index.js"></script>
+</body>
+</html>
